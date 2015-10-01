@@ -1,0 +1,3 @@
+Standard client-server semantics are preserved.
+errors by not updating individual exit points when making modifications are prevented. (可以避免由于修改时忘记更新某个单独的退出点而导致的错误)
+saves the compiler work to optimize redundant code away. (减轻了编译器的工作，无需删除冗余代码)

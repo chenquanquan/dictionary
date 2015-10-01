@@ -1,0 +1,52 @@
+Table - 7
+ 1: spectrum - 范围，光谱，系列
+ 2: phase - 阶段
+ 3: inviting - 引人注目的，诱人的
+ 4: dispense - 分配，实施
+ 5: advantage - 优势
+ 6: sequence - 顺序，一连串
+ 7: appropriate - 恰当的
+ 8: compression - 压缩
+ 9: provisional - 临时的
+ 10: crap - 废话
+ 11: audit - 审计，审核
+ 12: dummy - 空
+ 13: trick - 技巧
+ 14: by means of - 通过
+ 15: intervening - 在其中，干预
+ 16: period - 时期，期间
+ 17: dramatic - 显著的
+ 18: extensive - 广泛的，密集的
+ 19: cast light on - 使清楚
+ 20: evaluate - 评估，评价
+ 21: no longer - 不再
+ 22: comprehensive - 综合的，广泛的
+ 23: sbsolute - 完全
+ 24: conclude - 结束
+ 25: variant - 不同的
+ 26: parse - 解析
+ 27: shoot - 命中，射击
+ 28: intensity - 强烈
+ 29: brain - 头脑
+ 30: principle - 原理，原则
+ 31: policy - 策略，政策
+ 32: energy - 精力，能量
+ 33: idealize - 使理想化
+ 34: stick - 坚持，棍子
+ 35: extension - 延伸
+ 36: anatomy - 分析
+ 37: portal - 门户，桥门
+ 38: traffic - 交通，交易
+ 39: interprocess - 进程，进程间的
+ 40: prefix - 前缀
+ 41: interchangeable - 可交替的
+ 42: property - 特性
+ 43: discrete - 离散的
+ 44: summarize - 概括
+ 45: partial - 局部的，部分的
+ 46: chief - 首席的，首要的
+ 47: resemble - 类似
+ 48: postal - 邮政的
+ 49: carry - 搬运，携带
+ 50: a certain amount of - 一定量的
+ Total:448

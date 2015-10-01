@@ -1,0 +1,52 @@
+Table - 1
+ 1: abbreviation - 缩写
+ 2: acronym - 的缩写
+ 3: adaptation - 适应
+ 4: component - 成分，成员
+ 5: element - 元素，成员
+ 6: alternative - 替代
+ 7: approach - 方案
+ 8: consumer - 用户
+ 9: responsible - 责任
+ 10: consistenly - 一致的
+ 11: correspondence - 一致，对应，关联
+ 12: associate - 联系，对应
+ 13: artificially - 人为的
+ 14: manipulation - 操作
+ 15: purpose - 目的
+ 16: dedicated - 专注的
+ 17: indicate - 表明
+ 18: starve - 饿死
+ 19: sacrifice - 死掉
+ 20: pend - 待定
+ 21: enhance - 加强
+ 22: distinct - 明显的
+ 23: precise - 精确的，明确的
+ 24: accurate - 精确的
+ 25: accuracy - 精确的
+ 26: restrict - 限制
+ 27: violate - 违反
+ 28: suffer - 遭受
+ 29: terms of - 称作
+ 30: inherit - 继承
+ 31: processing latency - 处理时间
+ 32: subsequent - 随后的
+ 33: improper - 不合适的
+ 34: measure - 测量
+ 35: detection - 检查
+ 36: retrieve - 检索
+ 37: examine - 检查，仔细看
+ 38: query - 查询
+ 39: integrated - 完整的，整数
+ 40: cancellation - 取消
+ 41: expiry - 终止
+ 42: termination - 终止
+ 43: expiration - 到期
+ 44: relieve - 缓解
+ 45: concurrent - 并行
+ 46: behavior - 行为
+ 47: procedure - 程序，流程
+ 48: routine - 程序，常规
+ 49: former - 前面
+ 50: previous - 前面的
+ Total:525

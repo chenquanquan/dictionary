@@ -1,0 +1,52 @@
+Table - 5
+ 1: benefit - 好处
+ 2: destroy - 删除
+ 3: represent - 代表，表示
+ 4: reference - 引用，参考文献
+ 5: parity - 平价，奇偶校验
+ 6: instead of - 而不是
+ 7: reliable - 可靠的
+ 8: appear - 发布，出现
+ 9: aware - 意识到
+ 10: maintenance - 维护(n)
+ 11: compatible - 兼容
+ 12: demonstration - 示范
+ 13: duplication - 重复，复制
+ 14: denominator - 分母
+ 15: numerator - 分子
+ 16: persistence - 持久化，坚持
+ 17: intervene - 干预
+ 18: cooperative - 合作
+ 19: explicit - 明确的
+ 20: exhibit - 呈现
+ 21: veteran - 资深，老兵
+ 22: practical - 实际的
+ 23: extraction - 提取
+ 24: underlies - 基础
+ 25: encounter - 遭遇
+ 26: so that - 为了,以便
+ 27: suppose - 假设
+ 28: moment - 时刻
+ 29: tiny - 微小的
+ 30: fake - 假的
+ 31: drain - 耗尽，排光
+ 32: whichever - 无论
+ 33: occurrence - 事件,发生
+ 34: filp - 翻转
+ 35: latency - 延迟
+ 36: controversial - 有争议的
+ 37: spiritual - 精神上的
+ 38: exactly - 确切的说
+ 39: whereby - 借此
+ 40: interpret - 解释
+ 41: potential - 潜在的
+ 42: collision - 冲突
+ 43: concern - 涉及
+ 44: orient - 定向，面向
+ 45: abundance - 丰富
+ 46: fundamental - 基本的
+ 47: sensible - 明智的，感知的
+ 48: representation - 代表
+ 49: react - 反应
+ 50: complicated - 复杂的
+ Total:448

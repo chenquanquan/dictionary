@@ -1,0 +1,23 @@
+Table - 10
+ 1: transparent - 透明的
+ 2: esoteric - 深奥的，机密的
+ 3: displace - 置换，取代
+ 4: diagnose - 诊断
+ 5: overlap - 重叠
+ 6: balance - 天平，平衡，余额
+ 7: fashion - 方式
+ 8: invaluable - 非常宝贵的
+ 9: outage - 中断
+ 10: snap - 折断
+ 11: echo - 回声，反响，共鸣
+ 12: transcript - 抄本，副本，成绩单
+ 13: establish - 建立
+ 14: compensate - 补偿
+ 15: coefficient - 系数
+ 16: calculate - 计算
+ 17: rendezvous - 会合，约会
+ 18: affect - 影响，改变
+ 19: polite - 礼貌的，客气的
+ 20: verbatim - 逐字，按照字面
+ 21: preserve - 保护
+ Total:471
