@@ -20,6 +20,7 @@ use Getopt::Std;
 # Use open chinese word
 #use encoding "utf8", STDOUT => 'gbk';
 my $CONSOLE_CODE;
+my $platform = $^O;
 ##if ($^O =~ m/linux/) {
 #	use encoding "utf8", STDOUT => 'utf8';
 #	$CONSOLE_CODE='utf8';
@@ -30,7 +31,7 @@ my $CONSOLE_CODE;
 ##	print $^O."\n";
 ##}
     
-if ($^O =~ m/MSWin32/) {
+if ($platform =~ m/MSWin32/) {
     #use encoding "utf8", STDOUT => 'gbk';
     binmode(STDOUT, ':encoding(gbk)');
     $CONSOLE_CODE='gbk';
@@ -82,7 +83,12 @@ my $SEARCH_WORD;
 if (exists $ARGV[1]) {
     $SEARCH_WORD = $ARGV[1];
 	#print "Search word:".(decode('gbk', $ARGV[1]))."\n";
-    print "Search word:".(&decode($CONSOLE_CODE, $ARGV[1]))."\n";
+    if ($platform =~ m/MSWin32/) {
+        print "Search word:".(&decode($CONSOLE_CODE, $ARGV[1]))."\n";
+    } else {
+        #print "Search word:".(&decode($CONSOLE_CODE, $ARGV[1]))."\n";
+        print "Search word:".($ARGV[1])."\n";
+    }
 }
 
 # Get command
@@ -93,7 +99,12 @@ if (exists $ARGV[2]) {
     if ($ARGV[2] =~ "add") {
         print "Add new word:";
         if (exists $ARGV[3]) {
-            $ADD_CHINESE = &decode($CONSOLE_CODE, $ARGV[3]);
+            if ($platform =~ m/MSWin32/) {
+                $ADD_CHINESE = &decode($CONSOLE_CODE, $ARGV[3]);
+            } else {
+                #$ADD_CHINESE = &decode($CONSOLE_CODE, $ARGV[3]);
+                $ADD_CHINESE = $ARGV[3];
+            }
             print &encode($CONSOLE_CODE, $ADD_CHINESE)."\n";
             &add_word($WORDS_FILE_NAME, $SEARCH_WORD, $ADD_CHINESE);
         } else {
@@ -234,10 +245,15 @@ sub search_word
     my $key;
     my $value;
     my $chinese;
+
+    $chinese = $keyword;
+    if (not $platform =~ m/MSWin32/) {
+        $chinese = &decode($CONSOLE_CODE, $keyword);
+    }
     while (($key,$value) = each(%WORDS_TABLE)) {
-        #$chinese = decode('gbk', $keyword);
-		$chinese = $keyword;
-        #$chinese = decode($CONSOLE_CODE, $keyword);
+#        if ($platform =~ m/MSWin32/) {
+#            $value = &encode($CONSOLE_CODE, $value);
+#        }
         if ($key =~ m/(.*)$keyword(.*)/ || $value =~ m/(.*)$chinese(.*)/) {
             push @hit_list,$key;
         }

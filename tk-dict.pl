@@ -79,19 +79,23 @@ $MW->MainLoop;
 #
 sub input_word {
     # $entry - Reference to entry widget.
-    # $text - Reference to text widget.
+    # $note - Reference to note text widget.
+    # $dict - Reference to dictionary text widget.
     # $word - input word.
-    my ($entry, $note, $dict, $word) = @_;
+    my ($entry, $note, $dict, $input) = @_;
 
     my @display;
+    #my $word = &decode('utf-8', $$input);
+    my $word = $$input;
+    print $$input;
     $note->delete(qw/1.0 end/);
-    find_note($$word, \@display);
+    find_note($word, \@display);
     while (my $key = shift @display) {
         $note->insert('end', $key);
     }
 
     $dict->delete(qw/1.0 end/);
-    find_dict($$word, \@display);
+    find_dict($word, \@display);
     while (my $key = shift @display) {
         $dict->insert('end', $key);
     }
@@ -109,7 +113,7 @@ sub find_note {
     open (OUTPUT, "./$CMD $NOTE $input |") or die "Can't open ./$CMD $NOTE $input: $!";
     while (my $line = <OUTPUT>) {
 #        print "$line"; # add empty for complete double byte charecture.
-	push @$display, decode('utf-8', "$line");
+        push @$display, decode('utf-8', "$line");
     }
     close OUTPUT;
 }
@@ -125,7 +129,7 @@ sub find_dict {
 
     open (OUTPUT, "./$CMD $DICT $input |") or die "Can't open ./$CMD $DICT $input: $!";
     while (my $line = <OUTPUT>) {
-	push @$display, decode('utf-8', "$line");
+        push @$display, decode('utf-8', "$line");
     }
     close OUTPUT;
 }
