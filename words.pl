@@ -102,8 +102,8 @@ if (exists $ARGV[2]) {
             if ($platform =~ m/MSWin32/) {
                 $ADD_CHINESE = &decode($CONSOLE_CODE, $ARGV[3]);
             } else {
-                #$ADD_CHINESE = &decode($CONSOLE_CODE, $ARGV[3]);
-                $ADD_CHINESE = $ARGV[3];
+                $ADD_CHINESE = &decode($CONSOLE_CODE, $ARGV[3]);
+                #$ADD_CHINESE = $ARGV[3];
             }
             print &encode($CONSOLE_CODE, $ADD_CHINESE)."\n";
             &add_word($WORDS_FILE_NAME, $SEARCH_WORD, $ADD_CHINESE);
