@@ -37,15 +37,16 @@ $writer->xmlDecl();
 $writer->startTag('html');
 $writer->startTag('body');
 
-foreach my $item ( keys (%WORDS_TABLE) ) {
-    $writer->startTag('a', 'href' => $item);
-    $writer->characters($WORDS_TABLE{$item});
-    $writer->endTag('a');
+foreach my $item ( sort keys (%WORDS_TABLE) ) {
+    $writer->startTag('word', 'english' => $item, 'chinese' => $WORDS_TABLE{$item});
+    #$writer->characters($WORDS_TABLE{$item});
+    $writer->endTag('word');
 }
 
 $writer->endTag('body');
 $writer->endTag('html');
 
+$writer->end();
 
 # Write XML to file
 open my $filp, ">>:encoding(utf8)", $XMLFILE
@@ -55,7 +56,6 @@ open my $filp, ">>:encoding(utf8)", $XMLFILE
 printf $filp $writer->to_string();
 
 close $filp;
-$writer->end();
 
 ##
 # END
