@@ -1,3 +1,6 @@
 Standard client-server semantics are preserved.
 errors by not updating individual exit points when making modifications are prevented. (可以避免由于修改时忘记更新某个单独的退出点而导致的错误)
 saves the compiler work to optimize redundant code away. (减轻了编译器的工作，无需删除冗余代码)
+The strong advantage of TensorFlow is it flexibility in designing highly modular models which can also be a disadvantage for beginners since a lot of the pieces must be considered together when creating the model.
+So many issues can be dealt with easily since they're usually the same issues that a lot of other people run into considering the large number of people involved in the TensorFlow community. (很多问题都可以轻松处理，因为考虑到TensorFlow社区中涉及的大量人员，这些问题通常与许多其他人遇到的问题相同。)
+Developing open source projects for the sake of just developing something is not the reason behind this effort. (为了开发某些东西而开发开源项目并不是这项工作背后的原因。)
